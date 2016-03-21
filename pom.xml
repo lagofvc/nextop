@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.lago</groupId>
+    <artifactId>nextop</artifactId>
+    <packaging>war</packaging>
+    <version>0.0.1-SNAPSHOT</version>
+    
+    
+    <name>nextop - simple org. tool.</name>
+    <url>nextop</url>
+    <description>A java 8, MongoDB, JQuery, JSON, Jackson, HTML5 project for organizing tasks/items.</description>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <jdk.version>1.8</jdk.version>
+		<junit.version>4.11</junit.version>
+        <maven.version>3.2</maven.version>
+    </properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+    <build>
+        <finalName>nextop</finalName>
+        <plugins>
+            <plugin>
+	    		<groupId>org.apache.maven.plugins</groupId>
+	    		<artifactId>maven-compiler-plugin</artifactId>
+	    		<version>${maven.version}</version>
+	    		<configuration>
+		        	<source>${jdk.version}</source>
+		        	<target>${jdk.version}</target>
+	        	</configuration>
+	    	</plugin>
+        </plugins>
+    </build>
+</project>
