@@ -4,20 +4,18 @@ import org.junit.Test;
 import org.junit.After;
 import org.junit.Before;
 
-import java.util.Calendar;
-
 import static org.junit.Assert.*;
 
 /**
  * Created by lago on 3/20/16.
  */
-public class NoteObjectTest {
+public class NotaTest {
 
-    public Note classUnderTest;
+    public Nota classUnderTest;
 
     @Before
     public void setup(){
-        classUnderTest = new Note();
+        classUnderTest = new Nota();
     }
 
     @After
@@ -31,11 +29,10 @@ public class NoteObjectTest {
     }
 
     @Test
-    public void testCreateDateIsInThePast(){
+    public void testCreateDateIsPast(){
         try{
             Thread.sleep(100);
         }catch(InterruptedException ie){
-
         }
         long now = System.currentTimeMillis();
 
