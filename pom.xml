@@ -15,9 +15,11 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- versions -->
         <jdk.version>1.8</jdk.version>
 		<junit.version>4.11</junit.version>
         <maven.version>3.2</maven.version>
+        <evernote-api.version>1.25</evernote-api.version>
     </properties>
 
 	<dependencies>
@@ -27,7 +29,12 @@
 			<version>${junit.version}</version>
 			<scope>test</scope>
 		</dependency>
-	</dependencies>
+        <dependency>
+            <groupId>com.evernote</groupId>
+            <artifactId>evernote-api</artifactId>
+            <version>${evernote-api.version}</version>
+        </dependency>
+    </dependencies>
 
     <build>
         <finalName>nextop</finalName>
