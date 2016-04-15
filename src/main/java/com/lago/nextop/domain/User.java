@@ -1,16 +1,17 @@
 package com.lago.nextop.domain;
 
-import javax.security.auth.login.LoginException;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by lago on 3/22/16.
  */
-public class Usuario extends NextopObject {
+public class User extends NextopObject {
 
     private String loginId;
+    private ArrayList<Binder> binders;
 
-    public Usuario(){
-
+    public User(){
     }
 
     public String login(String username, String password) {
@@ -21,5 +22,9 @@ public class Usuario extends NextopObject {
 
     public String getLoginId() {
         return loginId;
+    }
+
+    public List<Binder> getBinderList() {
+        return binders;
     }
 }

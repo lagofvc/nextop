@@ -19,7 +19,7 @@
         <jdk.version>1.8</jdk.version>
 		<junit.version>4.11</junit.version>
         <maven.version>3.2</maven.version>
-        <evernote-api.version>1.25</evernote-api.version>
+        <evernote-api.version>1.25.1</evernote-api.version>
     </properties>
 
 	<dependencies>

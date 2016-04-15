@@ -7,13 +7,13 @@ import org.junit.Test;
 /**
  * Created by lago on 3/20/16.
  */
-public class CuadernoTest {
+public class BinderTest {
 
-    public Cuaderno classUnderTest;
+    public Binder classUnderTest;
 
     @Before
     public void setup(){
-        classUnderTest = new Cuaderno();
+        classUnderTest = new Binder();
     }
 
     @After

@@ -9,13 +9,13 @@ import static org.junit.Assert.*;
 /**
  * Created by lago on 3/20/16.
  */
-public class NotaTest {
+public class NoteTest {
 
-    public Nota classUnderTest;
+    public Note classUnderTest;
 
     @Before
     public void setup(){
-        classUnderTest = new Nota();
+        classUnderTest = new Note();
     }
 
     @After
