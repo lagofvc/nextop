@@ -13,7 +13,7 @@ public class BinderTest {
 
     @Before
     public void setup(){
-        classUnderTest = new Binder();
+        classUnderTest = new Binder("title");
     }
 
     @After

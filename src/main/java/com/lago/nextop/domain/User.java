@@ -6,12 +6,14 @@ import java.util.List;
 /**
  * Created by lago on 3/22/16.
  */
-public class User extends NextopObject {
+public class User extends NextO {
 
     private String loginId;
     private ArrayList<Binder> binders;
 
     public User(){
+        binders = new ArrayList<>();
+        binders.add(new Binder("things"));
     }
 
     public String login(String username, String password) {

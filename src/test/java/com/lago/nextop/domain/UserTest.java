@@ -25,12 +25,30 @@ public class UserTest {
     }
 
     @Test
-    public void testSuccessLoginGetsLoginID(){
-    }
-
-    @Test
     public void testUserHasABinder(){
         List<Binder> binderList = classUnderTest.getBinderList();
         Assert.assertNotNull(binderList.get(0));
+    }
+
+    @Test
+    public void testUserCanEditBinderName(){
+        List<Binder> binderList = classUnderTest.getBinderList();
+        Binder firstBinder = binderList.get(0);
+        firstBinder.setBinderName("MY FIRST BINDER");
+
+        List<Binder>binderListNew = classUnderTest.getBinderList();
+        Assert.assertEquals("MY FIRST BINDER", binderListNew.get(0).getBinderName());
+    }
+
+    @Test
+    public void testUserCanAddANoteToBinder(){
+        Note firstNote = new Note();
+        firstNote.setText("This is my first note ever, yo!");
+        List<Binder> binderList = classUnderTest.getBinderList();
+        Binder firstBinder = binderList.get(0);
+        firstBinder.addNote(firstNote);
+
+        List<Binder>binderListNew = classUnderTest.getBinderList();
+        Assert.assertEquals("This is my first note ever, yo!", binderListNew.get(0).getBinderNotes().get(0).getText());
     }
 }
